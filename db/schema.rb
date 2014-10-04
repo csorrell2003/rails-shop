@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140914025608) do
+ActiveRecord::Schema.define(version: 20141004194633) do
 
   create_table "categories", force: true do |t|
     t.string   "name"
@@ -33,7 +33,6 @@ ActiveRecord::Schema.define(version: 20140914025608) do
     t.string   "lg_icon"
     t.string   "affiliate_name"
     t.string   "affiliate_link"
-    t.integer  "rating_cache"
   end
 
   add_index "products", ["category_id"], name: "index_products_on_category_id"
